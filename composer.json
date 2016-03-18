@@ -1,6 +1,6 @@
 {
-    "name": "stil/gd-text",
-    "description": "A class drawing multiline and aligned text on pictures. Uses GD extension.",
+    "name": "xepan/gd-text",
+    "description": "A class drawing multiline and aligned text on pictures. Uses GD extension. forked from stil/gd-text",
     "license": "MIT",
     "require": {
         "php": ">=5.3",
