@@ -198,6 +198,7 @@ class Box
             $words = explode(" ", $line);
             $line = $words[0];
             for ($i = 1; $i < count($words); $i++) {
+                // $box = imageftbbox($options['font_size'], $options['rotation_angle'],$font_path, $text);
                 $box = $this->calculateBox($line." ".$words[$i]);
                 if (($box[4]-$box[6]) >= $this->box['width']) {
                     $lines[] = $line;
@@ -224,7 +225,7 @@ class Box
         $textHeight = count($lines) * $lineHeightPx;
 
         //extra height
-        return $textHeight + ($lineHeightPx/2);
+        return $textHeight + ($lineHeightPx/2) - ($this->fontSize * 0.6);
     }
 
 
